@@ -16,6 +16,7 @@
    			<div id="maintitle">JOIN OUR PARTY!</div>
             <!--These are the conatiners for input-->
    			<div id="emailinputcontainer" <?php if(!empty($_SESSION['errors']['email'])){echo 'class="error"';} ?> >
+               <div id="emailinputicon">@</div>               
    				<input id="inputform" name="email" >
                   <?php if(!empty($_SESSION['errors']['email'])): ?>
                      <?php foreach($_SESSION['errors']['email'] as $erroremail): ?>
@@ -24,6 +25,8 @@
                   <?php endif ?>               
    			</div>
    			<div id="usernameinputcontainer" <?php if(!empty($_SESSION['errors']['user'])){echo 'class="error"';} ?> >
+               <div id="usernameinputiconhead"></div>
+               <div id="usernameinputiconbody"></div>
    				<input id="inputform" name="user">
                   <?php if(!empty($_SESSION['errors']['user'])): ?>
                      <?php foreach($_SESSION['errors']['user'] as $erroruser): ?>
@@ -32,6 +35,8 @@
                   <?php endif ?>   
    			</div>
    			<div id="passwordinputcontainer" <?php if(!empty($_SESSION['errors']['password'])){echo 'class="error"';} ?> >
+               <div id="passwordinputiconbar"></div>
+               <div id="passwordinputiconlock"></div>               
    				<input id="inputform" name="password"> 
                   <?php if(!empty($_SESSION['errors']['password'])): ?>
                      <?php foreach($_SESSION['errors']['password'] as $errorpass): ?>
