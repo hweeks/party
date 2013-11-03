@@ -10,19 +10,34 @@
 
 	<body>
    <!--I am using a simple form that will call a php file once I've made it-->
-   <form action="" method="post">
+   <form action="validator.php" method="post">
     	<!--The whole input/submission area is going to be done with two containers, one for the input fields, one for the submit and cancel buttons.-->
       <div class="container">	
    			<div id="maintitle">JOIN OUR PARTY!</div>
             <!--These are the conatiners for input-->
    			<div id="emailinputcontainer" <?php if(!empty($_SESSION['errors']['email'])){echo 'class="error"';} ?> >
    				<input id="inputform" name="email" >
+                  <?php if(!empty($_SESSION['errors']['email'])): ?>
+                     <?php foreach($_SESSION['errors']['email'] as $erroremail): ?>
+                        <div class="errorpopup"><?=$erroremail ?></div>
+                     <?php endforeach ?>
+                  <?php endif ?>               
    			</div>
    			<div id="usernameinputcontainer" <?php if(!empty($_SESSION['errors']['user'])){echo 'class="error"';} ?> >
-   				<input id="inputform" name="user">  				
+   				<input id="inputform" name="user">
+                  <?php if(!empty($_SESSION['errors']['user'])): ?>
+                     <?php foreach($_SESSION['errors']['user'] as $erroruser): ?>
+                        <div class="errorpopup"><?=$erroruser ?></div>
+                     <?php endforeach ?>
+                  <?php endif ?>   
    			</div>
    			<div id="passwordinputcontainer" <?php if(!empty($_SESSION['errors']['password'])){echo 'class="error"';} ?> >
-   				<input id="inputform" name="password">  				
+   				<input id="inputform" name="password"> 
+                  <?php if(!empty($_SESSION['errors']['password'])): ?>
+                     <?php foreach($_SESSION['errors']['password'] as $errorpass): ?>
+                        <div class="errorpopup"><?=$errorpass ?></div>
+                     <?php endforeach ?>
+                  <?php endif ?>
    			</div>
 		</div>
 		<div class="submissionarea">
