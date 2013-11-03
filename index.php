@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <html>
 	<head>
    	<!--Select styles, scripts, and included Google OpenSans-->
@@ -14,13 +15,13 @@
       <div class="container">	
    			<div id="maintitle">JOIN OUR PARTY!</div>
             <!--These are the conatiners for input-->
-   			<div id="emailinputcontainer">
+   			<div id="emailinputcontainer" <?php if(!empty($_SESSION['errors']['email'])){echo 'class="error"';} ?> >
    				<input id="inputform" name="email" >
    			</div>
-   			<div id="usernameinputcontainer" >
+   			<div id="usernameinputcontainer" <?php if(!empty($_SESSION['errors']['user'])){echo 'class="error"';} ?> >
    				<input id="inputform" name="user">  				
    			</div>
-   			<div id="passwordinputcontainer" >
+   			<div id="passwordinputcontainer" <?php if(!empty($_SESSION['errors']['password'])){echo 'class="error"';} ?> >
    				<input id="inputform" name="password">  				
    			</div>
 		</div>
