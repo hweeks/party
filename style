@@ -1,11 +1,36 @@
 /*Establishing container size and borders*/
 
 .container{
-
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 220px;
+	height: 190px;
+	border: 1px solid;
+	border-color: #C6C4C4;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
 }
 
 .submissionarea{
-
+	margin-left: auto;
+	margin-right: auto;
+	width: 220px;
+	height: 50px;
+	border-left: 1px solid;
+	border-right: 1px solid;
+	border-bottom: 1px solid;
+	border-color: #C6C4C4;	
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
 }
 
 /*Title styles*/
@@ -28,11 +53,13 @@
 
 }
 
+
 /*Style for input forms*/
 
 #inputform{
 
 }
+
 
 /*Icons for the input fields*/
 
