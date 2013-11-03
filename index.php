@@ -6,6 +6,17 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
+      <script type="text/javascript" src="JQuery1.10.2.js"></script>
+         <script type="text/javascript">
+            function remove(){
+               $(".container, .submissionarea").hide();
+               $('#showbutton').css("display","inline");             
+            }
+            function unhide(){
+               $(".container, .submissionarea").show();
+
+            }
+         </script>      
 	</head>
 
 	<body>
@@ -17,7 +28,7 @@
             <!--These are the conatiners for input-->
    			<div id="emailinputcontainer" <?php if(!empty($_SESSION['errors']['email'])){echo 'class="error"';} ?> >
                <div id="emailinputicon">@</div>               
-   				<input id="inputform" name="email" >
+   				<input id="inputformemail" name="email" >
                   <?php if(!empty($_SESSION['errors']['email'])): ?>
                      <?php foreach($_SESSION['errors']['email'] as $erroremail): ?>
                         <div class="errorpopup"><?=$erroremail ?></div>
@@ -27,7 +38,7 @@
    			<div id="usernameinputcontainer" <?php if(!empty($_SESSION['errors']['user'])){echo 'class="error"';} ?> >
                <div id="usernameinputiconhead"></div>
                <div id="usernameinputiconbody"></div>
-   				<input id="inputform" name="user">
+   				<input id="inputformuser" name="user">
                   <?php if(!empty($_SESSION['errors']['user'])): ?>
                      <?php foreach($_SESSION['errors']['user'] as $erroruser): ?>
                         <div class="errorpopup"><?=$erroruser ?></div>
@@ -37,7 +48,7 @@
    			<div id="passwordinputcontainer" <?php if(!empty($_SESSION['errors']['password'])){echo 'class="error"';} ?> >
                <div id="passwordinputiconbar"></div>
                <div id="passwordinputiconlock"></div>               
-   				<input id="inputform" name="password"> 
+   				<input id="inputformpassword" name="password">
                   <?php if(!empty($_SESSION['errors']['password'])): ?>
                      <?php foreach($_SESSION['errors']['password'] as $errorpass): ?>
                         <div class="errorpopup"><?=$errorpass ?></div>
@@ -46,12 +57,11 @@
    			</div>
 		</div>
 		<div class="submissionarea">
-            <!--These are the buttons and their div-->
-   			<div id="buttoncontainer">
+            <!--These are the buttons-->
    				<a href="#" id="cancelbutton">Cancel</a>
    				<input type="submit" value="Sign Up" id="signupbutton">
-   			</div>
 		</div>
+   <button id="showbutton" onclick"unhide()">Show Form Please</button>   
 	</form> 
 	</body>
 </html>

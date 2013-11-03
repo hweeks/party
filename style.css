@@ -101,11 +101,34 @@
 }
 /*Style for input forms*/
 
-#inputform{
+#inputformemail{
 	background-color: transparent;
 	border-style: none;
 	height: 29px;
 	float: right;
+	z-index: 10;
+	display: inline;
+	margin-top: -26px;
+}
+
+#inputformuser{
+	background-color: transparent;
+	border-style: none;
+	height: 29px;
+	float: right;
+	z-index: 10;
+	display: inline;
+	margin-top: -30px;
+}
+
+#inputformpassword{
+	background-color: transparent;
+	border-style: none;
+	height: 29px;
+	float: right;
+	z-index: 10;
+	display: inline;
+	margin-top: -26px;
 }
 
 /*Error pop up styles*/
@@ -200,19 +223,13 @@
 
 /*Button Styles*/
 
-#buttoncontainer{
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 12px;
-	padding-left: 30px;
-}
-
 #signupbutton{
 	width: 83px;
 	height: 25px;
 	border: 1px solid;
-	margin-left: 40px;
-	margin-top: -12px;
+	margin-bottom: 10px;
+	margin-top: 12px;
+	margin-right: 12px;
 	padding-left: 15px;
 	padding-right: 15px;
 	padding-bottom: 5px;
@@ -233,17 +250,28 @@
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
 	text-decoration: none;
+	float: right;
 }
 
 #cancelbutton{
-	display: inline;
-	line-height: 25px;
+	width: 70px;
+	height: 30px;
+	padding-left: 20px;
+	padding-top: 12px;
+	margin-bottom: -12px;
+	display: inline-block;
 	text-shadow: 1px 1px #C6C4C4;	
 	font-family: 'Open Sans', sans-serif;
 	font-weight: bold;	
 	color: #444444;
-	text-decoration: none;
 	font-weight: 600;
-
 }
+
+#showbutton{
+	display: none;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+}
+
 
