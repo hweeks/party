@@ -1,0 +1,203 @@
+/*Establishing container size and borders*/
+
+.container{
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 220px;
+	height: 190px;
+	border: 1px solid;
+	border-color: #C6C4C4;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.submissionarea{
+	margin-left: auto;
+	margin-right: auto;
+	width: 220px;
+	height: 50px;
+	border-left: 1px solid;
+	border-right: 1px solid;
+	border-bottom: 1px solid;
+	border-color: #C6C4C4;	
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+/*Title styles*/
+
+#maintitle{
+	padding-top: 18px;
+	text-align: center;
+	font-size: 18px;
+	color: #2981D7;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+}
+
+/*Setting input field containers*/
+
+#emailinputcontainer{
+	width: 189px;
+	height: 29px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 16px;
+	border: 1px solid;	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border-color: #C6C4C4;
+	background: #FBFBFB;
+}
+
+#usernameinputcontainer{
+	width: 189px;
+	height: 29px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 12px;
+	border: 1px solid;	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border-color: #C6C4C4;	
+	background: #FBFBFB;
+}
+
+#passwordinputcontainer{
+	width: 189px;
+	height: 29px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 12px;	
+	border: 1px solid;	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border-color: #C6C4C4;
+	background: #FBFBFB;
+}
+
+#emailinputcontainer.error{
+	border-color: red;
+}
+
+#usernameinputcontainer.error{
+	border-color: red;
+}
+
+#passwordinputcontainer.error{
+	border-color: red;
+}
+/*Style for input forms*/
+
+#inputform{
+	background-color: transparent;
+	border-style: none;
+	height: 29px;
+	float: right;
+}
+
+/*Error pop up styles*/
+.errorpopup{
+	margin-top: -26px;
+	padding-left: 6px;
+	width: 300px;
+	display: block;
+	z-index: 3;
+	float: right;
+	position: relative;
+	left: 330px;
+	border: 1px solid;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.errorpopup:after 
+{
+	margin-top: -40px;	
+	content: "";
+	position: absolute;
+	top: 45px;
+	left: -5px;
+	border-style: solid;
+	border-width: 5px 5px 5px 0;
+	border-color: transparent #000000;
+	display: block;
+	width: 0;
+	z-index: 1;
+}
+/*Icons for the input fields*/
+
+#emailinputicon{
+
+}
+
+#usernameinputicon{
+
+}
+
+#passwordinputicon{
+
+}
+
+/*Button Styles*/
+
+#buttoncontainer{
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 12px;
+	padding-left: 30px;
+}
+
+#signupbutton{
+	width: 83px;
+	height: 25px;
+	border: 1px solid;
+	margin-left: 40px;
+	margin-top: -12px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 5px;
+	color: white;
+	font-size: 12px;
+	text-shadow: 1px 1px #C6C4C4;
+	border-color: #2A73A6;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;	
+	background-image: -ms-linear-gradient(bottom, #1767CB 0%, #3D9DE4 100%);
+	background-image: -moz-linear-gradient(bottom, #1767CB 0%, #3D9DE4 100%);
+	background-image: -o-linear-gradient(bottom, #1767CB 0%, #3D9DE4 100%);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #1767CB), color-stop(1, #3D9DE4));
+	background-image: -webkit-linear-gradient(bottom, #1767CB 0%, #3D9DE4 100%);
+	background-image: linear-gradient(to top, #1767CB 0%, #3D9DE4 100%);
+	display: inline;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+#cancelbutton{
+	display: inline;
+	line-height: 25px;
+	text-shadow: 1px 1px #C6C4C4;	
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;	
+	color: #444444;
+	text-decoration: none;
+	font-weight: 600;
+
+}
+
