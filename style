@@ -92,7 +92,10 @@
 /*Style for input forms*/
 
 #inputform{
-
+	background-color: transparent;
+	border-style: none;
+	height: 29px;
+	float: right;
 }
 
 
@@ -113,14 +116,49 @@
 /*Button Styles*/
 
 #buttoncontainer{
-
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 12px;
+	padding-left: 30px;
 }
 
 #signupbutton{
-
+	width: 83px;
+	height: 25px;
+	border: 1px solid;
+	margin-left: 40px;
+	margin-top: -12px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 5px;
+	color: white;
+	font-size: 12px;
+	text-shadow: 1px 1px #C6C4C4;
+	border-color: #2A73A6;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;	
+	background-image: -ms-linear-gradient(bottom, #1767CB 0%, #3D9DE4 100%);
+	background-image: -moz-linear-gradient(bottom, #1767CB 0%, #3D9DE4 100%);
+	background-image: -o-linear-gradient(bottom, #1767CB 0%, #3D9DE4 100%);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #1767CB), color-stop(1, #3D9DE4));
+	background-image: -webkit-linear-gradient(bottom, #1767CB 0%, #3D9DE4 100%);
+	background-image: linear-gradient(to top, #1767CB 0%, #3D9DE4 100%);
+	display: inline;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	text-decoration: none;
 }
 
 #cancelbutton{
+	display: inline;
+	line-height: 25px;
+	text-shadow: 1px 1px #C6C4C4;	
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;	
+	color: #444444;
+	text-decoration: none;
+	font-weight: 600;
 
 }
 
