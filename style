@@ -36,21 +36,56 @@
 /*Title styles*/
 
 #maintitle{
-
+	padding-top: 18px;
+	text-align: center;
+	font-size: 18px;
+	color: #2981D7;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
 }
 
 /*Setting input field containers*/
 
 #emailinputcontainer{
-
+	width: 189px;
+	height: 29px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 16px;
+	border: 1px solid;	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border-color: #C6C4C4;
+	background: #FBFBFB;
 }
 
 #usernameinputcontainer{
-
+	width: 189px;
+	height: 29px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 12px;
+	border: 1px solid;	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border-color: #C6C4C4;	
+	background: #FBFBFB;
 }
 
 #passwordinputcontainer{
-
+	width: 189px;
+	height: 29px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 12px;	
+	border: 1px solid;	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border-color: #C6C4C4;
+	background: #FBFBFB;
 }
 
 
