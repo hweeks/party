@@ -1,0 +1,64 @@
+/*Establishing container size and borders*/
+
+.container{
+
+}
+
+.submissionarea{
+
+}
+
+/*Title styles*/
+
+#maintitle{
+
+}
+
+/*Setting input field containers*/
+
+#emailinputcontainer{
+
+}
+
+#usernameinputcontainer{
+
+}
+
+#passwordinputcontainer{
+
+}
+
+/*Style for input forms*/
+
+#inputform{
+
+}
+
+/*Icons for the input fields*/
+
+#emailinputicon{
+
+}
+
+#usernameinputicon{
+
+}
+
+#passwordinputicon{
+
+}
+
+/*Button Styles*/
+
+#buttoncontainer{
+
+}
+
+#signupbutton{
+
+}
+
+#cancelbutton{
+
+}
+
