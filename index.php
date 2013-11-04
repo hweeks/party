@@ -8,14 +8,20 @@
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
       <script type="text/javascript" src="JQuery1.10.2.js"></script>
          <script type="text/javascript">
-            function remove(){
-               $(".container, .submissionarea").hide();
-               $('#showbutton').css("display","inline");             
-            }
-            function unhide(){
-               $(".container, .submissionarea").show();
-
-            }
+                (function ($,window,document,undefined) {
+                        $(document).ready(function() {
+                                $(".container,.submissionarea").show();
+                                $(".submissionarea").on("click","#cancelbutton",function() {
+                                        $(".container,.submissionarea").hide();
+                                        $("#openform").show();
+                                });
+                                $("#openform").click(function(e) {
+                                        e.preventDefault();
+                                        $(".container,.submissionarea").show();
+                                        $("#openform").hide();
+                                });
+                        });
+                })(jQuery,window,document);
          </script>      
 	</head>
 
@@ -58,10 +64,10 @@
 		</div>
 		<div class="submissionarea">
             <!--These are the buttons-->
-   				<a href="#" id="cancelbutton">Cancel</a>
+   				<div id="cancelbutton">Cancel</div>
    				<input type="submit" value="Sign Up" id="signupbutton">
 		</div>
-   <button id="showbutton" onclick"unhide()">Show Form Please</button>   
+   <button id="openform">Show Form Please</button>   
 	</form> 
 	</body>
 </html>
